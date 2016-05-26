@@ -11,7 +11,9 @@ import android.widget.TextView;
 import com.stomhong.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Fragment基类
+ *
+ *
  */
 public class BaseFragment extends Fragment {
 
