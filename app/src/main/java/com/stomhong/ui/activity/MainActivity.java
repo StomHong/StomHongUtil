@@ -7,7 +7,7 @@ import com.stomhong.base.BaseActivity;
 
 /**
  * <p>打造一个超强的通用工具库</p>
- * 设计模式是一种软实力，有时可能表现的不那么明显，但是它真的很重要
+ * 设计模式是一种软实力，有时可能表现得不那么明显，但是它真的很重要
  *
  * @author StomHong
  * @since 2016-5-14

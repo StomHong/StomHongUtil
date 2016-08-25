@@ -11,18 +11,18 @@ import android.widget.ImageView;
  * @author StomHong
  * @since 2016-5-14
  */
-public class CircleView extends ImageView{
+public class CircleImageView extends ImageView{
 
 
-    public CircleView(Context context) {
+    public CircleImageView(Context context) {
         super(context);
     }
 
-    public CircleView(Context context, AttributeSet attrs) {
+    public CircleImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CircleView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CircleImageView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
