@@ -5,19 +5,19 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 
 import com.stomhong.R;
 
 /**
+ * Activity抽象类
+ *
  * @author StomHong
- * @since 2016-5-17
+ * date 2016-5-17
  */
-public abstract class AbsActivity extends Activity{
+public abstract class AbsActivity extends Activity {
 
     public static final String TAG = AbsActivity.class.getSimpleName();
-    private FrameLayout mContainerView;
-    private LinearLayout mContainerGroup;
+    private FrameLayout mContainerGroup;
     private Context sContext;
 
     @Override
@@ -31,7 +31,7 @@ public abstract class AbsActivity extends Activity{
     }
 
     protected  void initView(){
-        mContainerGroup = (LinearLayout) LayoutInflater.from(this).inflate(setContentId(),null);
+        mContainerGroup = (FrameLayout) LayoutInflater.from(this).inflate(setContentId(),null);
 
     }
 
@@ -47,7 +47,7 @@ public abstract class AbsActivity extends Activity{
         return sContext;
     }
 
-    protected LinearLayout getContainerGroup(){
+    protected FrameLayout getContainerGroup(){
         return mContainerGroup;
     }
 

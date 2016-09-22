@@ -1,22 +1,22 @@
 package com.stomhong.base;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.stomhong.R;
 
 /**
  * Fragment基类
  *
  *
  */
-public class BaseFragment extends Fragment {
+public abstract class BaseFragment extends Fragment {
 
+    private Context mContext;
 
     public BaseFragment() {
         // Required empty public constructor
@@ -24,11 +24,30 @@ public class BaseFragment extends Fragment {
 
 
     @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mContext = context;
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
+       View view = LayoutInflater.from(mContext).inflate(getRootView(),null);
+        initView(view);
+        initData();
+        initEvent();
+        return view;
     }
+
+    protected abstract void initEvent();
+
+    protected abstract void initData();
+
+    protected abstract void initView(View view);
+
+    public Context getContext(){
+        return mContext;
+    }
+    protected abstract int getRootView();
 
 }

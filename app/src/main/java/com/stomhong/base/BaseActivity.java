@@ -6,6 +6,9 @@ import android.widget.FrameLayout;
 
 import com.stomhong.R;
 
+/**
+ * 抽象类
+ */
 public abstract class BaseActivity extends AbsActivity {
 
     private static final String TAG = BaseActivity.class.getSimpleName();
@@ -21,8 +24,8 @@ public abstract class BaseActivity extends AbsActivity {
     @Override
     protected void initView() {
         super.initView();
-        mContainerView = (FrameLayout) getContainerGroup().findViewById(R.id.id_lay_container_view);
-        mContentView = LayoutInflater.from(getContext()).inflate(setContentResId(),null);
+        mContainerView = (FrameLayout) getContainerGroup().findViewById(R.id.fl_container_view);
+        mContentView = LayoutInflater.from(this).inflate(setContentResId(),null);
         mContainerView.addView(mContentView);
         initResView(mContentView);
     }
