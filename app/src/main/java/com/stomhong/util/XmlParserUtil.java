@@ -7,5 +7,4 @@ package com.stomhong.util;
  */
 public class XmlParserUtil {
 
-
 }

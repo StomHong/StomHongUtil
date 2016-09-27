@@ -19,9 +19,31 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.WebViewActivity" />
-        <activity android:name=".ui.activity.LoginActivity"></activity>
+        <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.IntroAndGuideActivity" />
-        <activity android:name=".ui.activity.RegisterActivity"></activity>
+        <activity android:name=".ui.activity.RegisterActivity" />
+
+        <service
+            android:name=".base.BaseService"
+            android:enabled="false"
+            android:exported="false" />
+
+        <receiver
+            android:name=".base.BaseBroadcastReceiver"
+            android:enabled="false"
+            android:exported="false" />
+
+        <service
+            android:name=".base.BaseIntentService"
+            android:exported="false" />
+
+        <provider
+            android:name=".base.BaseContentProvider"
+            android:authorities="com.stomhong"
+            android:enabled="false"
+            android:exported="false">
+
+        </provider>
     </application>
 
 </manifest>
