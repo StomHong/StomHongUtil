@@ -32,7 +32,8 @@
                 android:hint="@string/user_name"
                 android:textColor="@color/grey700"
                 android:textColorHint="@color/grey400"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:inputType="phone"/>
 
         </android.support.design.widget.TextInputLayout>
 
@@ -47,7 +48,8 @@
                 android:hint="@string/user_password"
                 android:textColor="@color/grey700"
                 android:textColorHint="@color/grey400"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:inputType="textPassword"/>
         </android.support.design.widget.TextInputLayout>
 
     </LinearLayout>

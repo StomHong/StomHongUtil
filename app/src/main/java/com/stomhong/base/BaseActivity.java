@@ -7,7 +7,7 @@ import android.widget.FrameLayout;
 import com.stomhong.R;
 
 /**
- * 抽象类
+ * Activity基类
  */
 public abstract class BaseActivity extends AbsActivity {
 

@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 /**
- *
+ *  梦想着封装一个好用的Dialog却一直不得。
  * @author StomHong on 2016/9/22.
  */
 

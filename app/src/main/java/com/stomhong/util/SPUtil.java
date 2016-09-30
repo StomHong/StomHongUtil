@@ -7,5 +7,9 @@ import android.content.SharedPreferences;
  * @author StomHong on 2016/9/22.
  */
 public class SPUtil {
-    SharedPreferences sp = SharedPreferences
+    SharedPreferences sp ;
+    SharedPreferences.Editor editor;
+
+
+
 }
