@@ -6,11 +6,15 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 /**
+ * 解决ScrollView嵌套ListView，ListView只显示一行的问题
  * @author StomHong on 2016/9/22.
  */
-
 public class ListViewUtil {
 
+    /**
+     * 根据子条目的高度来设置ListView的总高度
+     * @param listview
+     */
     public static void setListViewHeightBaseOnChildren(ListView listview) {
         ListAdapter listAdapter = listview.getAdapter();
         if (listAdapter == null) {

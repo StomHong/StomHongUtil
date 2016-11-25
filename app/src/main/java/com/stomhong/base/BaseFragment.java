@@ -24,13 +24,13 @@ public abstract class BaseFragment extends Fragment {
 
 
     @Override
-    public void onAttach(Context context) {
+    public final void onAttach(Context context) {
         super.onAttach(context);
         mContext = context;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public final View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        View view = LayoutInflater.from(mContext).inflate(getRootView(),null);
         initView(view);

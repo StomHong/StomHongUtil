@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -23,7 +24,7 @@ public class App extends Application{
     /**
      * 每打开一个新Activity都将它加入集合里
      *
-     * @param activity
+     * @param activity 增加的Activity对象
      */
     public static void add(Activity activity){
         boolean isExist = false;
@@ -38,11 +39,25 @@ public class App extends Application{
     }
 
     /**
+     * 移除指定的Activity对象
+     *
+     * @param activity 移除的Activity对象
+     */
+    public static void remove(Activity activity) {
+        Iterator<Activity> it = mActivities.iterator();
+        while (it.hasNext()) {
+            if (it.next() == activity) {
+                it.remove();
+            }
+        }
+    }
+
+    /**
      * 关闭所有打开的Activity
      */
     public static void finishActivities(){
-        for (Activity activity : mActivities){
-            activity.finish();
+        for (Activity act : mActivities){
+            act.finish();
         }
     }
 

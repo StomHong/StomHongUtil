@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.IBinder;
 
 /**
- * 有两种绑定方式
+ * 有两种绑定方式，两种方式的生命周期不一样
  */
 public class BaseService extends Service {
 

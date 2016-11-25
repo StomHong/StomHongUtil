@@ -1,4 +1,4 @@
-package com.stomhong.entity;
+package com.stomhong.weixin.entity;
 
 /**
  * @author StomHong on 2016/9/22.

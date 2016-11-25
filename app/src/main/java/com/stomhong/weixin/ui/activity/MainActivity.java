@@ -1,4 +1,4 @@
-package com.stomhong.ui.activity;
+package com.stomhong.weixin.ui.activity;
 
 import android.view.View;
 

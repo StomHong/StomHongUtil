@@ -1,18 +1,15 @@
-package com.stomhong.ui.activity;
+package com.stomhong.weixin.ui.activity;
 
 import android.view.View;
 
 import com.stomhong.R;
 import com.stomhong.base.BaseActivity;
 
-/**
- * 注册
- */
-public class RegisterActivity extends BaseActivity {
+public class IntroAndGuideActivity extends BaseActivity {
 
     @Override
     protected int setContentResId() {
-        return R.layout.activity_register;
+        return R.layout.activity_intro_and_guide;
     }
 
     @Override
