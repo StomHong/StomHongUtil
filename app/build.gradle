@@ -10,6 +10,26 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java', '.apt_generated']
+            aidl.srcDirs = ['src/main/aidl', '.apt_generated']
+            assets.srcDirs = ['src/main/assets']
+            res.srcDirs =
+                    [
+                            'src/main/res/find',
+                            'src/main/res/login',
+                            'src/main/res/mine',
+                            'src/main/res/contacts',
+                            'src/main/res/weixin',
+                            'src/main/res/resource',
+                            'src/main/res/'
+
+                    ]
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
